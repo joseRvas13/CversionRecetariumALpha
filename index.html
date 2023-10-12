@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -64,7 +64,13 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            transition: color 0.3s ease; 
         }
+
+        nav ul li a:hover {
+        color: #28a56b;
+        }
+        
 
         .header-content {
             text-align: center;
@@ -74,9 +80,14 @@
         }
 
         .slogan {
-            font-size: 18px;
-            font-family: 'DM Serif Display', serif;
-        }
+        font-size: 25px;
+        font-family: 'DM Serif Display', serif;
+        margin-left: 590px;
+        border: 4px solid #28a56b; /* Añade un borde de 2px de ancho y color blanco */
+        border-radius: 40px;
+        padding: 10px 15px; /* Ajusta el espaciado interno según tu preferencia */
+         }
+
 
         .content {
             position: absolute;
@@ -100,10 +111,11 @@
 
         button {
             color: #fdfdfd;
-            padding: 10px 25px;
+            font-size: 20px;
+            padding: 10px 27px;
             background: #28a56b;
-            border: 1px solid #f8f8f8;
-            border-radius: 20px;
+            border: 2px solid #f8f8f8;
+            border-radius: 30px;
             outline: none;
             cursor: pointer;
             margin-top: auto;
@@ -112,7 +124,7 @@
 </head>
 
 <body>
-    <header class="transparent"> <!-- Clase "transparent" añadida al header -->
+    <header class="transparent"> 
         <div class="container">
             <div class="logo">Logo</div>
             <div class="slogan">Recetarium</div>
@@ -134,6 +146,10 @@
         <br>
         <button type="button">Botón</button>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
